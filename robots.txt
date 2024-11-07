@@ -1,5 +1,5 @@
 # START nuxt-robots (indexable)
 User-agent: *
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://stolitsa-turfirma.ru/sitemap.xml
 # END nuxt-robots
