@@ -31,7 +31,7 @@ const navigation = [
           </div>
         </div>
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-          <div v-for="count in 2" class="md:grid md:grid-cols-2 md:gap-8">
+          <div v-for="count in 1" class="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">{{ navigation[count - 1].title }}
               </h3>
