@@ -12,6 +12,7 @@ const { data: featured } = await useFeatured();
         <slot />
       </DocumentProse>
     </div>
+
     <div v-if="config.directory.featured?.showOnAllPages"
       class="col-span-1 lg:col-span-4 2xl:col-span-3 order-last lg:mr-20 mx-5 lg:mx-0">
       <DirectoryFeaturedRecommendation v-if="config?.directory?.featured?.showOnAllPages && page && !page.featured"

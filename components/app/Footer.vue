@@ -6,16 +6,10 @@ const socials = computed(() => config.footer.socials ? Object.values(config.foot
 
 const navigation = [
   {
-    title: "Directory", links: [{ title: "Submit", link: "/submit" }, { title: "Advertise", link: "/advertise" }],
-  },
-  {
-    title: "Categories", links: config.directory.tags?.filter(e => e && (e as Tag).name).map(e => ({ title: (e as Tag).name, link: `/tags/${(e as Tag).name}` })).slice(0, 4),
-  },
-  {
-    title: "Blog", links: [{ title: "Articles", link: "/blog" }],
-  },
-  {
-    title: "Legal", links: [{ title: "Privacy Policy", link: "/legal/terms-of-service" }, { title: "Terms of Service", link: "/legal/privacy-policy" }],
+    title: "Навигация", links: [
+        { title: "Экскурсии по Уфе", link: "/submit" },
+        { title: "Маршуты", link: "/advertise" }
+    ],
   },
 ];
 </script>
@@ -27,6 +21,7 @@ const navigation = [
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
           <AppLogo />
+          <span class="flex">В "Столице" история Уфы бережно хранится!</span>
           <div class="flex space-x-6">
             <a v-for="(item, key) in socials" :key="item?.link" :href="item?.link"
               class="text-gray-400 hover:text-gray-500">
@@ -50,23 +45,18 @@ const navigation = [
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">{{ navigation[count + 1].title }}
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Схема проезда
               </h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li v-for="item in navigation[count + 1].links" :key="item.title">
-                  <a :href="item.link"
-                    class="text-sm leading-6 text-gray-600 dark:text-gray-300 hover:dark:text-gray-400 hover:text-gray-900">{{
-                      item.title }}</a>
-                </li>
-              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Контакты
+              </h3>
             </div>
           </div>
         </div>
       </div>
       <div class="mt-16 border-t border-gray-900/10 dark:border-gray-600 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-xs leading-5 text-gray-500">&copy; {{ new Date().getFullYear() }} {{ config.general.title }} All
-          rights
-          reserved.</p>
+        <p class="text-xs leading-5 text-gray-500">&copy; {{ new Date().getFullYear() }} {{ config.general.title }} Все права защищены.</p>
       </div>
     </div>
   </footer>

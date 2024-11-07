@@ -2,20 +2,20 @@ import type Emoji from "./components/OgImage/Emoji.vue";
 
 export default defineAppConfig({
   general: {
-    title: "Minted Directory",
-    logo: "",
-    iconLogo: "fluent-emoji-flat:leaf-fluttering-in-wind",
+    title: 'Турфирма "Столица"',
+    logo: "logo.png",
+    iconLogo: "",
   },
   site: {
     // override the general settings for seo tags.
     // leave empty for general priority.
     // url is necessary for correct function of seo module.
-    name: "Minted Directory",
-    description: "Example Description",
-    url: "https://example.com",
+    name: 'Туристская фирма "Столица"',
+    description: "Туры по Башкирии и России",
+    url: "https://stolitsa-turfirma.ru",
     favicon: {
-      image: "",
-      emoji: "🍃",
+      image: "favicon.ico",
+      emoji: "",
     },
   },
   directory: {
@@ -73,7 +73,7 @@ export default defineAppConfig({
   },
   header: {
     banner: {
-      show: true,
+      show: false,
       text: "Create your own directory website in minutes.",
       link: "https://minteddirectory.com",
       brandText: "MintedDirectory",
@@ -81,42 +81,40 @@ export default defineAppConfig({
     navbar: {
       colorModeSelector: true,
       links: [
-        { name: "Directory", to: "/" },
-        { name: "Blog", to: "/blog" },
-        { name: "Advertise", to: "/advertise" },
-        {
-          name: "Analytics",
-          to: "https://us.posthog.com/shared/7dgSk4cvgNYnJwBu6R47kZXHBUBJWQ",
-          target: "_blank",
-        },
+        { name: "Главная", to: "/" },
+        { name: "Экскурсии", name2: "по Уфе", to: "/blog" },
+        { name: "Маршруты",  name2: "по Башкирии", to: "/rb" },
+        { name: "Туры",      name2: "по России", to: "/russia" },
+        { name: "Приём",     name2: "гостей", to: "/welcome" },
+        { name: "О нас", to: "/about" },
       ],
     },
     actionButton: {
-      text: "Submit a starter",
-      href: "/submit",
+      text: "Авторизоваться",
+      href: "/login",
     },
   },
   footer: {
     description: "Best directory for my niche.",
     socials: {
-      github: {
-        link: "",
-        icon: "tabler:brand-github",
+      vk: {
+        link: "https://vk.com/turfirma_stolitsa",
+        icon: "tabler:brand-vk",
       },
       facebook: {
         link: "",
         icon: "tabler:brand-facebook",
       },
       instagram: {
-        link: "",
+        link: "https://instagram.com/stolitsaufa",
         icon: "tabler:brand-instagram",
       },
       x: {
-        link: "https://x.com/mark_bruderer",
+        link: "",
         icon: "tabler:brand-twitter",
       },
       youtube: {
-        link: "https://www.youtube.com/@mark_hacks",
+        link: "",
         icon: "tabler:brand-youtube",
       },
     },

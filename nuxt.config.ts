@@ -49,7 +49,7 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: "https://example.com",
+    url: "https://stolitsa-turfirma.ru",
   },
   compatibilityDate: "2024-09-20",
 });

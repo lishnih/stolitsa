@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["DM Sans"],
+        display: ["sans-serif"],
       },
       colors: {
         primary: colors.sky,
