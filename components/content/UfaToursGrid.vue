@@ -1,0 +1,7 @@
+<script setup lang="ts">
+const { data } = await useAsyncData('blog', () => queryContent('/tour_ufa').where({ _path: { $ne: "/tour_ufa" }, _extension: "md" }).find());
+</script>
+
+<template>
+  <UiCardTour v-for="i in data" :item="i" />
+</template>
