@@ -1,1 +1,0 @@
-import{_ as o}from"./CT0inbwF.js";import{k as s,e as n,i as c,w as a,c as r,S as _}from"./n2cBHswC.js";const l={},d={class:"w-5/6 px-5 py-10 mx-auto"};function m(e,f){const t=o;return r(),n("div",d,[c(t,null,{default:a(()=>[_(e.$slots,"default")]),_:3})])}const u=s(l,[["render",m]]);export{u as default};
