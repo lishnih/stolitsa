@@ -14,7 +14,7 @@ export default defineAppConfig({
     description: "Туры по Башкирии и России",
     url: "https://stolitsa-turfirma.ru",
     favicon: {
-      image: "favicon.ico",
+      image: "/favicon.ico",
       emoji: "",
     },
   },

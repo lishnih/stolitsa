@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('blog', () => queryContent('/tour_ufa').where({ _path: { $ne: "/tour_ufa" }, _extension: "md" }).find());
+const { data } = await useAsyncData('tour_ufa',
+    () => queryContent('/tour_ufa').where({ _path: { $ne: "/tour_ufa" }, _extension: "md" }).find());
 </script>
 
 <template>

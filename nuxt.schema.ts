@@ -41,7 +41,7 @@ export default defineNuxtSchema({
           title: "URL",
           description:
             "Base url of your website, important for the correct function of the seo module.",
-          default: "https://example.com",
+          default: "https://stolitsa-turfirma.ru",
         }),
         favicon: group({
           title: "",
